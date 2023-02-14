@@ -16,8 +16,7 @@ import pl.jaktestowac.restapi.main.rop.DeleteArticleEndpoint;
 import pl.jaktestowac.restapi.main.test.data.ArticleTestDataGenerator;
 import pl.jaktestowac.restapi.tests.testbases.SuiteTestBase;
 
-import static io.restassured.RestAssured.given;
-import static org.testng.Assert.assertEquals;
+
 
 public class CreateArticleTest extends SuiteTestBase {
 
