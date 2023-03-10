@@ -24,7 +24,7 @@ public class GetSingleUserTest extends SuiteTestBase {
         userCreatedResponse = new GenerateUserForTest().createUserForTest();
     }
 
-    @TmsLink("ID-3")
+    @TmsLink("ID-12")
     @Severity(SeverityLevel.CRITICAL)
     @Description("The goal of this test is to get created user")
     @Test
@@ -39,6 +39,9 @@ public class GetSingleUserTest extends SuiteTestBase {
         Assertions.assertThat(actualUser)
                 .describedAs("Get user is different than expected when send created user id")
                         .usingRecursiveComparison().isEqualTo(userCreatedResponse);
+
+
+
 
     }
 

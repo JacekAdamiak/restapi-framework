@@ -1,5 +1,7 @@
 package pl.jaktestowac.restapi.main.pojo.user.response;
 
+import java.util.Objects;
+
 public class UserCreatedResponse {
 
     private Integer id;
@@ -58,4 +60,21 @@ public class UserCreatedResponse {
         this.avatar = avatar;
     }
 
+    @Override
+    public String toString() {
+        return "User " + id + ", " + email + ", " + firstname + ", " + lastname + ", " + password + ", " + avatar;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        UserCreatedResponse that = (UserCreatedResponse) o;
+        return Objects.equals(id, that.id) && Objects.equals(email, that.email) && Objects.equals(firstname, that.firstname) && Objects.equals(lastname, that.lastname) && Objects.equals(password, that.password) && Objects.equals(avatar, that.avatar);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, email, firstname, lastname, password, avatar);
+    }
 }

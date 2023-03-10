@@ -19,7 +19,7 @@ public class CreateUserTests extends SuiteTestBase {
     UserCreatedResponse userCreatedResponse;
     User user;
 
-    @TmsLink("ID-1")
+    @TmsLink("ID-11")
     @Severity(SeverityLevel.CRITICAL)
     @Description("The goal of this test is to create new user")
     @Test

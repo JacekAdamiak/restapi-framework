@@ -23,7 +23,7 @@ public class CreateArticleTest extends SuiteTestBase {
     ArticleCreatedResponse articleCreatedResponse;
     Article article;
 
-    @TmsLink("ID-2")
+    @TmsLink("ID-21")
     @Severity(SeverityLevel.CRITICAL)
     @Description("The goal of this test is to create new article")
     @Test
